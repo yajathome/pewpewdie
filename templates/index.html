@@ -33,8 +33,7 @@
             </div>
           </nav>
     </head>
-    <body style="padding-top:105px;text-align:center;background-image: url('images/pic.svg');
-    background-repeat: no-repeat;
+    <body style="padding-top:105px;text-align:center;background-image:url({{url_for('static',filename='pic.svg')}});background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;">
         <div>
@@ -43,13 +42,13 @@
             </h1>
             <div class="row" >
                 <div class="col">
-                    <img src="images/download.png" alt=""height='480px'>
+                    <img src="{{url_for('static',filename='download.png')}}" alt=""height='480px'>
                 </div>
                 <div class="col">
-                    <img src="images/download.png" height='480px' alt="">
+                    <img src="{{url_for('static',filename='download.png')}}" height='480px' alt="">
                 </div>
                 <div class="col">
-                    <img src="images/download.png" height='480px' alt="">
+                    <img src="{{url_for('static',filename='download.png')}}" height='480px' alt="">
                 </div>
             </div>
         </div>
